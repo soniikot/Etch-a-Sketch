@@ -1,0 +1,10 @@
+
+.wrapper {
+    align-items: center;
+    display: flex;
+}
+
+
+div{
+    border: 1px solid black;
+}
