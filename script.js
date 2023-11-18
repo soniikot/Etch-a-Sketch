@@ -1,12 +1,27 @@
+
+
 function createScreen(){
-const container = document.querySelector('#container');
+    for (i=1; i<257;i++){
+        if (i%16==0){
+           const container = document.querySelector('#container'); 
+            const block = document.createElement('div');
+            block.textContent='B';
+container.appendChild(block);
+           
+const newLine = document.createElement('div');
+           newLine.classList.add('break');
+           container.appendChild(newLine);
+        
+
+        }
+        else{
 const block = document.createElement('div');
-block.textContent='I am block';
+block.textContent='B';
 container.appendChild(block);
 
-}
+    }}}
 
 
-for (i=0;i<16;i++){
-    createScreen()
-};
+createScreen();
+    
+   
