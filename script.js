@@ -5,7 +5,9 @@ function createScreen(){
         if (i%16==0){
            const container = document.querySelector('#container'); 
             const block = document.createElement('div');
-            block.textContent='B';
+            block.style.cssText = "border: 1px solid black; height: 25px; width: 25px";
+          
+          block.classList.add('block');
 container.appendChild(block);
            
 const newLine = document.createElement('div');
@@ -16,8 +18,9 @@ const newLine = document.createElement('div');
         }
         else{
 const block = document.createElement('div');
-block.textContent='B';
+block.classList.add('block');
 container.appendChild(block);
+block.style.cssText = "border: 1px solid black; height: 25px; width: 25px";
 
     }}}
 
