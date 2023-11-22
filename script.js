@@ -10,7 +10,7 @@ block.addEventListener('mouseenter',()=>{
 })
 container.appendChild(block);
             block.style.cssText = "border: 1px solid black; height: 25px; width: 25px";
-          
+            block.classList.add('block');
 
            
 const newLine = document.createElement('div');
@@ -25,11 +25,11 @@ const newLine = document.createElement('div');
         block.addEventListener('mouseenter',()=>{
             block.style.backgroundColor ='black';
         })
-        //block.classList.add('blocks');
+        block.classList.add('block');
         container.appendChild(block);
         block.style.cssText = "border: 1px solid black; height: 25px; width: 25px";
-        }
-            
+}
+       
 
 
     }}
@@ -37,15 +37,15 @@ const newLine = document.createElement('div');
 
 createScreen(16);
 
-
-
-/*const blocks = document.querySelectionAll('block'); s
-blocks.forEach((block)=>{
-    block.addEventListener("mouseover", () => {
-block.style.backgroundColor ="blue";
-
+const cleanBtn=document.querySelector('#cleanBtn');
+  const blocks = document.querySelectorAll('.block');
+  for (const block of blocks){
+cleanBtn.addEventListener("click", function() {
+block.style.backgroundColor='white';
 });
-});*/
+  }
+
+
 
 
     
