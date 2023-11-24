@@ -38,17 +38,34 @@ const newLine = document.createElement('div');
 createScreen(16);
 
 const cleanBtn=document.querySelector('#cleanBtn');
-  const blocks = document.querySelectorAll('.block');
-  for (const block of blocks){
-cleanBtn.addEventListener("click", function() {
-block.style.backgroundColor='white';
-});
-  }
+cleanBtn.addEventListener("click", () => {
+  let userSize = Number(prompt('Size of new grid? Print a number less than 100'));
+ const blocks = document.querySelectorAll('.block');
+   for (const block of blocks){
+  block.remove();}
+createScreen(userSize);
+     
+    });
+  
 
 
 
+  
+
+  
+
+  const newScreenBtn=document.querySelector('.newScreen')
+  newScreenBtn.addEventListener("click", () => {
+    const destroyOldScreen =document.querySelector('#container');
+    container.remove();
+        createScreen(input.value);
+      });
+    
 
     
+
+
+
 
 
    
