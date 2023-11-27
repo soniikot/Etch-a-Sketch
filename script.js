@@ -9,7 +9,7 @@ block.addEventListener('mouseenter',()=>{
     block.style.backgroundColor ='black';
 })
 container.appendChild(block);
-            block.style.cssText = "border: 1px solid black; height: 25px; width: 25px";
+            block.style.cssText = `border: 1px solid black; height: 800px/${grids}; width: 800px/${grids};`
             block.classList.add('block');
 
            
@@ -27,7 +27,7 @@ const newLine = document.createElement('div');
         })
         block.classList.add('block');
         container.appendChild(block);
-        block.style.cssText = "border: 1px solid black; height: 25px; width: 25px";
+        block.style.cssText = `border: 1px solid black; height: 800px/${grids}; width: 800px/${grids}`;
 }
        
 

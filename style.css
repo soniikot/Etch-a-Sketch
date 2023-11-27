@@ -3,6 +3,7 @@
     display: flex;
   flex-wrap: wrap;
   min-width:800px;
+  max-height:800px;
   
 }
 
@@ -17,10 +18,12 @@
   height: 0;
   }
 
-.blocks{
+.block{
     border: 1px solid black;
     display:flex;
-  flex:1;
+    flex-shrink:1;
+    flex-grow:0;
+    
    
 }
 
@@ -29,3 +32,5 @@
   flex-direction: column;
   margin:10px;
 }
+
+/*think about flex-box, experiment in code.pen
