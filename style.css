@@ -23,6 +23,8 @@
     display:flex;
     flex-shrink:1;
     flex-grow:0;
+    width:10px;
+    height:10px;
     
    
 }
